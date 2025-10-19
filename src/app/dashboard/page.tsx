@@ -98,7 +98,7 @@ export default function DashboardPage() {
         console.log('Hairstyle generation completed, image size:', data.imageData.length, 'characters');
         
         // Refresh credits after successful generation
-        await refreshCredits();
+        // await refreshCredits(); // TODO: Fix getUserCredits RLS issue
       } else {
         throw new Error('Invalid response format: missing image data');
       }
